@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float speed;
     public Text countText;
@@ -11,37 +12,41 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
     private int count;
 
-    void Start ()
+    AudioSource source;
+
+    void Start()
     {
+        source = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         count = 0;
-        SetCountText ();
+        SetCountText();
         winText.text = "";
     }
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis ("Horizontal");
-        float moveVertical = Input.GetAxis ("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rb.AddForce (movement * speed);
+        rb.AddForce(movement * speed);
     }
 
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag ( "Pick Up"))
+        if (other.gameObject.CompareTag("Pick Up"))
         {
-            other.gameObject.SetActive (false);
+            source.Play();
+            other.gameObject.SetActive(false);
             count = count + 1;
-            SetCountText ();
+            SetCountText();
         }
     }
 
-    void SetCountText ()
+    void SetCountText()
     {
-        countText.text = "Count: " + count.ToString ();
+        countText.text = "Count: " + count.ToString();
         if (count >= 11)
         {
             winText.text = "You Win!";
