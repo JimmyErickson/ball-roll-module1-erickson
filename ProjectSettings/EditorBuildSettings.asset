@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Roll A Ball.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3662ae39295534999a4c98161285787c, type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: fd5eaad30e8d34f0ab98b17e25039ced, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9f2e67e7dc1114c80ac4e6ee89c333db, type: 2}
