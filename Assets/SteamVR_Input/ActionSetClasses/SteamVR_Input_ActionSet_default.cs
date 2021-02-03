@@ -105,6 +105,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean TogglePlayer
+        {
+            get
+            {
+                return SteamVR_Actions.default_TogglePlayer;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
