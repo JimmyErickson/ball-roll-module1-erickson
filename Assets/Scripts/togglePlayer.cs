@@ -30,6 +30,7 @@ public class togglePlayer : MonoBehaviour
     private Rigidbody ballRb;
     public GameObject BigPlayer;
     public GameObject LittlePlayer;
+    public MonoBehaviour playerScript;
 
     private void Start()
     {
@@ -67,7 +68,7 @@ public class togglePlayer : MonoBehaviour
 
         if (jump)
         {
-            BigPlayer.GetComponent(Player).enabled() = !BigPlayer.GetComponent("Player").enabled();
+            BigPlayer.GetComponent<Player (script)>.enabled() = !BigPlayer.GetComponent("Player").enabled();
             BigPlayer.GetComponent<Rigidbody>.enabled() = !BigPlayer.GetComponent<Rigidbody>.enabled();
             BigPlayer.GetComponent<Throwable>.enabled() = !BigPlayer.GetComponent<Throwable>.enabled();
             BigPlayer.GetComponent<Interactable>.enabled() = !BigPlayer.GetComponent<Interactable>.enabled();
