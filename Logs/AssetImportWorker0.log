@@ -984,3 +984,91 @@ System memory in use after: 176.5 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1948.
 Total: 2.566038 ms (FindLiveObjects: 0.266044 ms CreateObjectMapping: 0.057914 ms MarkObjects: 2.105458 ms  DeleteObjects: 0.135339 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 543.040367 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Materials/ItemPickupOutline.mat
+  artifactKey: Guid(3d938759d8b7a414988ec3261fb5265d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Materials/ItemPickupOutline.mat using Guid(3d938759d8b7a414988ec3261fb5265d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a7a43449e9c9ecf09c1b87b57735e7') in 0.626166 seconds
+  Import took 0.867233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001748 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Materials/ItemPickupOutlineThick.mat
+  artifactKey: Guid(425031c746a6df44aa1dfdb17c2b8b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Materials/ItemPickupOutlineThick.mat using Guid(425031c746a6df44aa1dfdb17c2b8b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a336a373658e579e4e1837a859dc06') in 0.046812 seconds
+  Import took 0.051050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 677.772929 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/RPMCounterBorder.png
+  artifactKey: Guid(27916dbd53464474fbd89dc6b88228ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/RPMCounterBorder.png using Guid(27916dbd53464474fbd89dc6b88228ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a24b57625e3fdaec5fc41457854cee') in 0.669708 seconds
+  Import took 0.812887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003083 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/RPMCounterFill.png
+  artifactKey: Guid(05f36522b35629f44aac32011b53123b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/RPMCounterFill.png using Guid(05f36522b35629f44aac32011b53123b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0a4116e7cedcfe5b5a301b153933fc') in 0.017650 seconds
+  Import took 0.025630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 194.058922 seconds.
+  path: Assets/Scripts/togglePlayer.cs
+  artifactKey: Guid(3e01cee5fd482408fa5b58337c93d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/togglePlayer.cs using Guid(3e01cee5fd482408fa5b58337c93d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f0b6b50c7f0e2130ad27b15ee213d6a') in 0.701660 seconds
+  Import took 0.745616 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
+Preloading 1 native plugins for Editor in 2.92 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.769 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Unloading 1419 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.0 MB.
+System memory in use after: 181.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1954.
+Total: 29.819017 ms (FindLiveObjects: 3.194695 ms CreateObjectMapping: 0.254396 ms MarkObjects: 25.508933 ms  DeleteObjects: 0.858874 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010532 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 1 native plugins for Editor in 1.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.685 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 1 native plugins for Editor in 0.51 ms.
+Unloading 1419 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.2 MB.
+System memory in use after: 181.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1957.
+Total: 4.181316 ms (FindLiveObjects: 0.327953 ms CreateObjectMapping: 0.092871 ms MarkObjects: 3.631602 ms  DeleteObjects: 0.127112 ms)
+

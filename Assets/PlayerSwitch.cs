@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
+using UnityEngine.UI;
 
 public class PlayerSwitch : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlayerSwitch : MonoBehaviour
     //public SteamVR_Action_Vector2 moveAction = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("platformer", "Move");
     //this refers to a click event on the touch pad/joystick
     public SteamVR_Action_Boolean jumpAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("platformer", "Jump");
+    public Text countText;
+    public Text winText;
 
     //multiplier for ball movement
     //public float forceMult = 2.0f;
@@ -30,6 +33,9 @@ public class PlayerSwitch : MonoBehaviour
     private Rigidbody ballRb;
     public GameObject BigPlayer;
     public GameObject LittlePlayer;
+    public int scoreCount = 0;
+
+    
     //public MonoBehaviour playerScript;
 
     private void Start()
@@ -42,6 +48,8 @@ public class PlayerSwitch : MonoBehaviour
 
         BigPlayer.SetActive(false);
         LittlePlayer.SetActive(true);
+        
+        //scoreCount = 0;
     }
 
     private void Update()
@@ -76,5 +84,14 @@ public class PlayerSwitch : MonoBehaviour
         }
         //ballRb.AddForce(movement * this.forceMult);
 
+    }
+
+    public void SetCountText()
+    {
+        countText.text = "Count: " + scoreCount.ToString();
+        if (scoreCount >= 5)
+        {
+            winText.text = "You Win!";
+        }
     }
 }
