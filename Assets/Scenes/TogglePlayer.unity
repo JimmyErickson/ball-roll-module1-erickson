@@ -3326,7 +3326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11465950, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -4496,7 +4496,6 @@ GameObject:
   - component: {fileID: 114000013222133236}
   - component: {fileID: 114000011924280898}
   - component: {fileID: 114000009946985188}
-  - component: {fileID: 1000014148170509}
   - component: {fileID: 1000014148170510}
   m_Layer: 0
   m_Name: BallController
@@ -4505,30 +4504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1000014148170509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000014148170508}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e01cee5fd482408fa5b58337c93d522, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Joystick: {fileID: 4000013835691236}
-  moveAction:
-    actionPath: /actions/platformer/in/Move
-    needsReinit: 0
-  jumpAction:
-    actionPath: /actions/platformer/in/Jump
-    needsReinit: 0
-  forceMult: 2
-  upMult: 250
-  joyMove: 0.01
-  BigPlayer: {fileID: 550472658}
-  LittlePlayer: {fileID: 1602766620}
 --- !u!114 &1000014148170510
 MonoBehaviour:
   m_ObjectHideFlags: 0
