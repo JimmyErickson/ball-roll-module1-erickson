@@ -1,0 +1,10 @@
+# Starting compiling SteamVR.dll
+/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d7e41f45550bb4de5b136071cfd4c653
+# Starting compiling SteamVR_Input_Editor.dll
+/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-3c1ae8a2816f64b4197de379ee94977f
+# Starting compiling SteamVR_Actions.dll
+/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a2ac008a11eb54521abbfaaba28b7b43
+# Starting compiling SteamVR_Editor.dll
+/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-22901d99b448947c0915f2fe7eef7cc6
+# Starting compiling Assembly-CSharp.dll
+/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-01345531e6b934994bc2643746078bdf

@@ -33,7 +33,7 @@ public class PlayerSwitch : MonoBehaviour
     private Rigidbody ballRb;
     public GameObject BigPlayer;
     public GameObject LittlePlayer;
-    public int scoreCount = 0;
+    //public int scoreCount = 0;
 
     
     //public MonoBehaviour playerScript;
@@ -84,14 +84,5 @@ public class PlayerSwitch : MonoBehaviour
         }
         //ballRb.AddForce(movement * this.forceMult);
 
-    }
-
-    public void SetCountText()
-    {
-        countText.text = "Count: " + scoreCount.ToString();
-        if (scoreCount >= 5)
-        {
-            winText.text = "You Win!";
-        }
     }
 }

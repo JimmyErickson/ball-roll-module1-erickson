@@ -7,7 +7,7 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class LockToPoint : MonoBehaviour
     {
-        public Transform snapTo;
+        //public Transform snapTo;
         private Rigidbody body;
         public float snapTime = 2;
 
@@ -22,6 +22,9 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void FixedUpdate()
         {
+            GameObject vrPlayer = GameObject.FindGameObjectsWithTag("VrPlayer")[0];
+            Transform snapTo = vrPlayer.transform;
+            
             bool used = false;
             if (interactable != null)
                 used = interactable.attachedToHand;
@@ -40,7 +43,7 @@ namespace Valve.VR.InteractionSystem.Sample
                 if (dropTimer > 1)
                 {
                     //transform.parent = snapTo;
-                    transform.position = snapTo.position;
+                    transform.position = snapTo.position + new Vector3(1, 1, 1);
                     transform.rotation = snapTo.rotation;
                 }
                 else
@@ -53,6 +56,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
                     transform.position = Vector3.Lerp(transform.position, snapTo.position, Time.fixedDeltaTime * t * 3);
                     transform.rotation = Quaternion.Slerp(transform.rotation, snapTo.rotation, Time.fixedDeltaTime * t * 2);
+                    transform.localScale = snapTo.localScale;
                 }
             }
         }
