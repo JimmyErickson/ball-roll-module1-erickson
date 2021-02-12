@@ -10,29 +10,18 @@ public class PlayerSwitch : MonoBehaviour
     // the joystick when moved
     public Transform Joystick;
 
-    //this refers to the vive's touch pad or oculus's joystick
-    //public SteamVR_Action_Vector2 moveAction = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("platformer", "Move");
-    //this refers to a click event on the touch pad/joystick
+    
     public SteamVR_Action_Boolean jumpAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("platformer", "Jump");
     public Text countText;
     public Text winText;
 
-    //multiplier for ball movement
-    //public float forceMult = 2.0f;
-    
-    //vertical force to add for jumping
-    //public float upMult = 250.0f;
-
-    //the original scene was on a different scale, so we've modified the multipler
-    //public float joyMove = 0.01f;
-
-    //Interactable script of this GameObject
     private Interactable interactable;
 
     //game ball's Rigidbody
     private Rigidbody ballRb;
-    public GameObject BigPlayer;
     public GameObject LittlePlayer;
+    public GameObject Controller;
+    public bool isBig = false;
     //public int scoreCount = 0;
 
     
@@ -46,7 +35,6 @@ public class PlayerSwitch : MonoBehaviour
         //get the ball's Rigidbody so we can add force to it
         ballRb = GameObject.Find("/Ball").GetComponent<Rigidbody>();
 
-        BigPlayer.SetActive(false);
         LittlePlayer.SetActive(true);
         
         //scoreCount = 0;
@@ -79,8 +67,26 @@ public class PlayerSwitch : MonoBehaviour
 
         if (jump)
         {
-            BigPlayer.SetActive(!BigPlayer.activeInHierarchy);
-            LittlePlayer.SetActive(!BigPlayer.activeInHierarchy);
+            if (isBig == false)
+            {
+                LittlePlayer.transform.localScale = new Vector3(35, 35, 35);
+                LittlePlayer.transform.localPosition = new Vector3(25, 0, -20);
+                Controller.transform.localScale = new Vector3(35, 40, 35);
+                //Controller.transform.localPosition = new Vector3(1, -10, -3);
+                isBig = true;
+
+            }
+            else
+            {
+                LittlePlayer.transform.localScale = new Vector3(1, 1, 1);
+                LittlePlayer.transform.localPosition = new Vector3(1, 53, 1);
+                Destroy(Controller);
+                //Controller.transform.localScale = new Vector3(1, 1, 1);
+                //Controller.transform.localPosition = new Vector3(2, 55, -4);
+                isBig = false;
+            }
+            //BigPlayer.SetActive(!BigPlayer.activeInHierarchy);
+            //LittlePlayer.SetActive(!BigPlayer.activeInHierarchy);
         }
         //ballRb.AddForce(movement * this.forceMult);
 

@@ -44,3 +44,11 @@ The following packages were added:
   com.unity.textmeshpro@3.0.1
   com.unity.timeline@1.4.5
   com.unity.ugui@1.0.0
+
+=== Thu Feb 11 18:42:55 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.xr.oculus from version 1.6.1 to 1.7.0

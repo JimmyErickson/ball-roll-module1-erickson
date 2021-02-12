@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - CameraController
     - Pacer
     - PlayerController
+    - PlayerSwitch
     - Rotator
     SteamVR.dll:
     - URPMaterialSwitcher
@@ -42,6 +43,8 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
     - Valve.VR.SteamVR_Skeleton_Poser
+    SteamVR_Editor.dll:
+    - Valve.VR.SteamVR_UnitySettingsWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Management.Editor.dll:
@@ -49,6 +52,8 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
+    Unity.XR.Oculus.dll:
+    - Unity.XR.Oculus.OculusSettings
     Unity.XR.OpenVR.dll:
     - Unity.XR.OpenVR.OpenVRLoader
     - Unity.XR.OpenVR.OpenVRSettings
@@ -113,101 +118,260 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1498}
+      Script: {instanceID: 1496}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1588}
+      Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1706}
+      Script: {instanceID: 1704}
     - Class: 114
-      Script: {instanceID: 1742}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 1924}
+      Script: {instanceID: 1922}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 1928}
+    - Class: 114
+      Script: {instanceID: 2040}
     - Class: 114
       Script: {instanceID: 2042}
     - Class: 114
-      Script: {instanceID: 2044}
+      Script: {instanceID: 2100}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2172}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 2384}
     - Class: 114
-      Script: {instanceID: 2388}
+      Script: {instanceID: 2390}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2432}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2494}
     - Class: 114
-      Script: {instanceID: 2498}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2516}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 3010}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3204}
     - Class: 114
-      Script: {instanceID: 3152}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 3222}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3228}
+      Script: {instanceID: 3294}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3302}
     - Class: 114
-      Script: {instanceID: 3298}
+      Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3428}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3966}
     - Class: 114
-      Script: {instanceID: 3676}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 3932}
-    - Class: 114
-      Script: {instanceID: 3964}
-    - Class: 114
-      Script: {instanceID: 4008}
-    - Class: 114
-      Script: {instanceID: 4036}
+      Script: {instanceID: 4038}
     - Class: 114
       Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4258}
+      Script: {instanceID: 4260}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4402}
     - Class: 114
-      Script: {instanceID: 4434}
+      Script: {instanceID: 4436}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TogglePlayer.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1496}
+    - Class: 114
+      Script: {instanceID: 1542}
+    - Class: 114
+      Script: {instanceID: 1566}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 1598}
+    - Class: 114
+      Script: {instanceID: 1704}
+    - Class: 114
+      Script: {instanceID: 1740}
+    - Class: 114
+      Script: {instanceID: 1922}
+    - Class: 114
+      Script: {instanceID: 1928}
+    - Class: 114
+      Script: {instanceID: 2040}
+    - Class: 114
+      Script: {instanceID: 2042}
+    - Class: 114
+      Script: {instanceID: 2100}
+    - Class: 114
+      Script: {instanceID: 2172}
+    - Class: 114
+      Script: {instanceID: 2320}
+    - Class: 114
+      Script: {instanceID: 2384}
+    - Class: 114
+      Script: {instanceID: 2428}
+    - Class: 114
+      Script: {instanceID: 2458}
+    - Class: 114
+      Script: {instanceID: 2494}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2596}
+    - Class: 114
+      Script: {instanceID: 2748}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2890}
+    - Class: 114
+      Script: {instanceID: 3010}
+    - Class: 114
+      Script: {instanceID: 3038}
+    - Class: 114
+      Script: {instanceID: 3086}
+    - Class: 114
+      Script: {instanceID: 3092}
+    - Class: 114
+      Script: {instanceID: 3148}
+    - Class: 114
+      Script: {instanceID: 3218}
+    - Class: 114
+      Script: {instanceID: 3224}
+    - Class: 114
+      Script: {instanceID: 3250}
+    - Class: 114
+      Script: {instanceID: 3294}
+    - Class: 114
+      Script: {instanceID: 3302}
+    - Class: 114
+      Script: {instanceID: 3424}
+    - Class: 114
+      Script: {instanceID: 3440}
+    - Class: 114
+      Script: {instanceID: 3454}
+    - Class: 114
+      Script: {instanceID: 3460}
+    - Class: 114
+      Script: {instanceID: 3748}
+    - Class: 114
+      Script: {instanceID: 3934}
+    - Class: 114
+      Script: {instanceID: 3966}
+    - Class: 114
+      Script: {instanceID: 4010}
+    - Class: 114
+      Script: {instanceID: 4038}
+    - Class: 114
+      Script: {instanceID: 4156}
+    - Class: 114
+      Script: {instanceID: 4260}
+    - Class: 114
+      Script: {instanceID: 4402}
+    - Class: 114
+      Script: {instanceID: 4436}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -285,7 +449,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: a72489c8bd496f23c1a96d7902ce6765
+      Hash: 4abb80cba2d78ed9258136201394eb1a
     assemblyName: Unity.XR.Oculus.dll
     namespaceName: Unity.XR.Oculus
     className: OculusSettings
@@ -573,7 +737,7 @@ ScriptsOnlyBuild:
     className: UIElement
   - hash:
       serializedVersion: 2
-      Hash: b03d1c51938aa5acf14208025059c8af
+      Hash: 56cdceaf53de72f6b81adba17f6207ea
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem.Sample
     className: LockToPoint
@@ -1011,7 +1175,7 @@ ScriptsOnlyBuild:
     className: BallController
   - hash:
       serializedVersion: 2
-      Hash: ba7d017e3171d1970cbced635be3298c
+      Hash: 834561154916fdd0d0edfae59c54765c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1311,6 +1475,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: babc0509c577e78e28426d9c0c5fb79d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerSwitch
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1339,6 +1509,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenVR.dll
     namespaceName: Unity.XR.OpenVR
     className: OpenVRSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 513b0fd6b9dfa577b598ff54f880e27d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: togglePlayer
   - hash:
       serializedVersion: 2
       Hash: 581f3710e1186967c9213e3923915a29
@@ -1545,6 +1721,6 @@ ScriptsOnlyBuild:
     className: SteamVR_Behaviour_Single
   platform: 19
   scenePathNames:
+  - Assets/Scenes/TogglePlayer.unity
   - Assets/Scenes/Roll A Ball.unity
-  playerPath: /Users/jimmyerickson/Unity Stuff/ball-roll-module1-erickson/Builds/Roll
-    A Ball Build.app/Roll-A-Ball-Jimmy.exe
+  playerPath: C:/Builds/Roll-A-Ball-Jimmy.exe

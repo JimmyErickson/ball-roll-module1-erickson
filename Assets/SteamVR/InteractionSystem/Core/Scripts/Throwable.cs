@@ -57,6 +57,7 @@ namespace Valve.VR.InteractionSystem
         protected RigidbodyInterpolation hadInterpolation = RigidbodyInterpolation.None;
 
         protected new Rigidbody rigidbody;
+        protected new Collider collider;
 
         [HideInInspector]
         public Interactable interactable;
@@ -69,8 +70,9 @@ namespace Valve.VR.InteractionSystem
             interactable = GetComponent<Interactable>();
 
 
-
+            collider = GetComponent<Collider>();
             rigidbody = GetComponent<Rigidbody>();
+
             rigidbody.maxAngularVelocity = 50.0f;
 
 
@@ -140,6 +142,8 @@ namespace Valve.VR.InteractionSystem
 
             hadInterpolation = this.rigidbody.interpolation;
 
+            collider.enabled = false;
+
             attached = true;
 
 			onPickUp.Invoke();
@@ -162,6 +166,8 @@ namespace Valve.VR.InteractionSystem
         protected virtual void OnDetachedFromHand(Hand hand)
         {
             attached = false;
+
+            collider.enabled = true;
 
             onDetachFromHand.Invoke();
 
